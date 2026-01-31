@@ -1,11 +1,4 @@
-/* Targeted selection for the main news feed container */
-div[role="main"] > div:nth-child(3), 
-#ssrb_feed_start + div,
-div[aria-label="Stories"] + div {
-    display: none !important;
-}
-
-/* Optional: Hide the "Stories" tray if it distracts you */
-div[aria-label="Stories"] {
+// If the first one doesn't work, try targeting the parent of the main role 
+div[role="main"] > div > div > .x9f619.x1n2onr6.x1ja2u2z {
     display: none !important;
 }
