@@ -1,0 +1,11 @@
+/* Targeted selection for the main news feed container */
+div[role="main"] > div:nth-child(3), 
+#ssrb_feed_start + div,
+div[aria-label="Stories"] + div {
+    display: none !important;
+}
+
+/* Optional: Hide the "Stories" tray if it distracts you */
+div[aria-label="Stories"] {
+    display: none !important;
+}
